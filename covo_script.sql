@@ -14,9 +14,9 @@ create table utilisateur(
 	uti_id int not null auto_increment primary key,
     uti_nom varchar(100) not null,
     uti_prenom varchar(100) not null,
-    uti_telephone varchar(15) not null,
+    uti_telephone varchar(50) not null,
     uti_login varchar(100) unique not null,
-    uti_mdp varchar(50) not null,
+    uti_mdp varchar(500) not null,
     uti_profil int not null
 )engine=innodb;
 
